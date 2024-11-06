@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #login-form {
+        display: flex;
+        flex-direction: column;
+        /* width: 15rem; */
+        align-items: center;
+      }
+
+      h1 {
+        margin-bottom: 20vh;
+        text-align: center;
+      }
+
+      input, button {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        border: 1px solid black;
+        outline: none;
+        padding: 10px;
+      }
+
+      button {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+        width: 20rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Admin Access</h1>
+    <form id="login-form">
+      <input type="text" id="user-id" placeholder="Admin" required />
+      <input type="password" placeholder="Password" id="password" required />
+      <button type="submit">Login</button>
+    </form>
+    <script src="login.js"></script>
+  </body>
+</html>

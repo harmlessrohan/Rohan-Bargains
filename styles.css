@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --color1: rgb(9, 16, 87);
+  --color2: rgb(2, 76, 170);
+  --color3: rgb(236, 131, 5);
+  --color4: rgb(219, 211, 211);
+}
+
+header {
+  background-color: var(--color1);
+  color: white;
+  padding: 0.5rem 1rem 0px 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+main {
+  padding: 20px;
+}
+
+#game-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.game {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 21px;
+  width: 15rem;
+  height: 20rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.game {
+  color: white;
+  transition: transform 250ms ease-out;
+  border-radius: 20px;
+  background-color: aliceblue;
+  filter: hue-rotate(45deg);
+}
+
+.game button {
+  opacity: 0;
+}
+
+h1 {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  color: var(--color1);
+  cursor: pointer;
+}
+
+h3 {
+  color: var(--color1);
+}
+
+p {
+  color: var(--color2);
+}
+
+.game button {
+  background-color: var(--color2);
+  color: white;
+  position: relative;
+  margin: auto;
+  bottom: 0;
+  font-size: 1.25rem;
+  margin-top: 75%;
+  margin-left: 5%;
+  width: 90%;
+  padding: 3%;
+  border-radius: 11px;
+  border: none;
+}
+
+li a:hover {
+  color: chartreuse;
+}
+
+@media only screen and (max-width: 436px) {
+  .game {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 21px;
+    width: 65%;
+    height: 20rem;
+    margin-left: 3.5rem;
+  }
+}
+
+.game:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  background-color: white;
+  filter: none;
+
+  button {
+    background-color: blue;
+    opacity: 1;
+  }
+}
+
+#redirectButton {
+  font-size: 1.5rem;
+  margin: 0 3rem;
+}
+
+#billing-cart-items li{
+  
+  list-style-type: none;
+  background-color: var(--color2);
+  color: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  width: fit-content;
+}
+#cart-items li {
+  list-style-type: none;
+  background-color: var(--color2);
+  color: white;
+  margin: 1rem ;
+  padding: 1rem;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+li button {
+  margin: 0 1rem;
+}
+
+#cart-items {
+  display: flex;
+  flex-wrap: wrap;
+}

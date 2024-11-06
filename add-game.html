@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Game</title>
+    <style>
+      h1 {
+        background: black;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Game</h1>
+    <form id="add-game-form">
+      <label for="game-title">Game Title:</label>
+      <input type="text" id="game-title" required />
+      <label for="game-price">Game Price:</label>
+      <input type="number" id="game-price" required />
+      <label for="game-image">Game Image:</label>
+      <input type="file" id="game-image" accept="image/*"/>  
+      <button type="submit">Add Game</button>
+    </form>
+
+    <h2>Game List</h2>
+    <ul id="game-list"></ul>
+
+    <script src="add-game.js"></script>
+  </body>
+</html>
